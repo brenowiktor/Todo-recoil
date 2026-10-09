@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+#root {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input[type='text'],
+input:not([type]),
+select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input[type='text']:focus,
+input:not([type]):focus,
+select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+form input {
+  flex: 1;
+}
+
+/* Botões */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+/* Filtro */
+select {
+  width: 100%;
+  margin-bottom: 16px;
+  background: #fff;
+}
+
+/* Lista */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+li span {
+  flex: 1;
+  word-break: break-word;
+}
+
+li input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Botão remover (último botão dentro do li) */
+li button {
+  background: #ef4444;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+li button:hover {
+  background: #dc2626;
+}
+
+/* Mensagem de lista vazia */
+p {
+  text-align: center;
+  color: #6b7280;
+  padding: 12px 0;
+}
